@@ -4,10 +4,10 @@ import { actors } from "../data";
 function Actors() {
   const actorArray = actors.map((actor) => {
     return (
-      <div>
+      <div key={actor.name}>
         <h1>{actor.name}</h1>
         <ul>
-          {actor.movies.map((movie) => <li>{movie}</li> )}
+          {actor.movies.map((movie) => <li key={movie}>{movie}</li> )}
         </ul>
       </div>
     )
