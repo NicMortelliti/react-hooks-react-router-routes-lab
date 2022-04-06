@@ -16,7 +16,7 @@ function Movies() {
   
   return (
     <div>
-      <h1>Moves Page</h1>
+      <h1>Movies Page</h1>
       {movieArray}
     </div>
   );
